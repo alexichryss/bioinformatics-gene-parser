@@ -1,0 +1,46 @@
+Description,Chromosome,Gene,SNP,Risk alleles,Not Likely,Less Likely,Normal,More Likely,Most Likely,Carrier
+Congenital Erythropoietic Porphyria (Gunther disease),10,UROS,rs28941774,"AA, AG*, GG",GG,,,,AA,AG
+,,,rs28941775,"CC, CT*, TT",TT,,,,CC,CT
+Cystic Fibrosis,7,CFTR,i3000001,"DD, DI*, II",II,,,,DD,DI
+G6PD Deficiency,X,G6PD,rs1050828,"CC, CT, TT",CC,,,CT,TT,
+Haemochromatosis,6,HFE,rs1800562,"AA, AG, GG",GG,,,AG,AA,
+,,,rs1799945,"CC, CG, GG",,,"CC,CG",GG,,
+Haemophilia,X,F8,,,,,,,,
+,X,F9,,,,,,,,
+(Factor XI deficiency is more common in Ashkenazi Jews),4,F11,i4000397,"AA, AG*, GG",GG,,,,AA,AG
+,,,i4000398,"GG, GT*, TT",GG,,,,TT,GT
+,,,i4000399,"CC, CT*, TT",TT,,,,CC,GT
+Huntington's disease,4,HTT,rs17781557,"GG, GT*, TT",TT,,,,GG,GT
+Nonsyndromic Deafness,A,KCNQ4,rs28937588,,,,,,,
+,,,rs28937589,,,,,,,
+,,,rs28939710,,,,,,,
+,4,WFS1,rs28937893,,,,,,,
+,4,DSPP,rs28929492,,,,,,,
+,5,TGBF1,,,,,,,,
+,11,TECTA,rs28939691,,,,,,,
+,,,rs28939690,,,,,,,
+,11,MYO7A,rs28934903,,,,,,,
+,13,GJB2,rs28931595,,,,,,,
+,,,i4000434,"DD, DI, II",II,,,,"DD,DI",
+,,,i4000435,"DD, DI, II",II,,,,"DD,DI",
+,14,COCH,rs28938175,,,,,,,
+,16,CRYM,rs28929490,,,,,,,
+Neurofibromatosis type II,22,NF2,,,,,,,,
+Polycystic kidney disease,16,PKD1,rs34197769,"AA, AG, GG",GG,,,,"AA,AG",
+,,,rs40433,"CC, CT, TT",TT,,,,"CC,CT",
+,6,PKHD1,rs28939383,"AA, AG*, GG",GG,,,,AA,AG
+,,,rs28937907,"AA, AG*, GG",GG,,,,AA,AG
+,,,Rs2435322,"AA, AC*, CC",CC,,,,AA,AC
+Sickle-cell Anemia,11,HBB,i3003137,"AA, AT*, TT",TT,,,,AA,AT
+Tay-Sachs disease,15,HEXA,i4000436,"CC, CT, TT",CC,,,,"CT,TT",
+,,,i4000391,"DD, TATC",DD,,,,TATC,
+,,,i4000393,"CC, CG, GG",CC,,,,"CG,GG",
+,,,i4000438,"CC, CT, TT",CC,,,,"CT,TT",
+,,,i4000440,"AA, AG, GG",GG,,,,"AA,AG",
+,,,i4000442,"AA, AG, GG",GG,,,,"AA,AG",
+Variegate porphyria,1,PPOX,rs12735723,"CC, CG, GG",CC,,,,"CG,GG",
+,,,rs28936676,"AA, AC, CC",AA,,,,"AC,CC",
+,,,rs28936677,"CC, CT, TT",TT,,,,"CC,CT",
+Wilson's disease,3,CP,rs701753,,,,,,,
+,13,ATP7B,rs28942074,,,,,,,
+,,,rs28942075,,,,,,,

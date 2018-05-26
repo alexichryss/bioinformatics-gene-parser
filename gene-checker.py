@@ -133,20 +133,21 @@ def build():
 
 # takes 23AndMe file and outputs matches to risk alleles
 def main():
-    print('Processing gene files...')
-    for f in tqdm(glob.glob('*.csv')):
-        set_diseases(os.path.join('', f))
-
+    
     try:
         args = sys.argv[1]
     except:
-        print('Usage: dna.py <filename>')
+        print('Usage: {} <23AndMe filename>'.format(sys.argv[0]))
         return
-    process(args)
-    # try:
-    #     process(args)
-    # except:
-    #     print('Could not process file')
+
+    print('Processing gene files...')
+    for f in tqdm(glob.glob('./data/*.csv')):
+        set_diseases(os.path.join('', f))
+
+    try:
+        process(args)
+    except:
+        print('Could not process file')
 
 if __name__ == '__main__':
     main()

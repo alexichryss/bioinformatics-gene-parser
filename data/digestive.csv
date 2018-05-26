@@ -1,7 +1,6 @@
 Description,Chromosome,Gene,SNP,Risk alleles,Not Likely,Less Likely,Normal,More Likely,Most Likely,Carrier
 Acid reflux disease (GERD),10,CYP2C19,,,,,,,,
-"Acid reflux disease 
-(Eosinophilic esophagitis)",7,CCL26,rs2302009,"AA, AC, CC",,,"AA,AC",,CC,
+"Acid reflux disease (Eosinophilic esophagitis)",7,CCL26,rs2302009,"AA, AC, CC",,,"AA,AC",,CC,
 Gallstones,8,ADRB3,rs4994,"AA, AG, GG",,,AA,"AG,GG",,
 Kidney Disease,15,MTHFS,rs6495446,"CC, CT, TT",,"CT,TT",CC,,,
 ,6,PKHD1,rs28937907,,,,,,,

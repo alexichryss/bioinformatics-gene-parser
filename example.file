@@ -1,0 +1,9 @@
+# This is an example file. It is of five SNPS taken from a 23AndMe results file.
+#
+# rsid	chromosome	position	genotype
+rs4950928	1	203155882	CC
+rs459552	5	112176756	AT
+rs7757037	6	35548236	AA
+i3003137	11	5248232	TT
+rs6725887	2	203745885	TT
+rs2165241	15	74222202	TT

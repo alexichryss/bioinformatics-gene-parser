@@ -66,8 +66,15 @@ def process(filename):
         if 'Most Likely' in m:
             print(m)
 
+    results = sorted(results, key=lambda x: x[0])
+
     # save the results to an output file
-    with open('output.txt', 'w+') as s:
+    i = 0
+    path = 'output_' + str(i) + '.txt'
+    while os.path.isfile(path):
+        i += 1
+        path = 'output_' + str(i) + '.txt'
+    with open(path, 'w+') as s:
         for match in results:
             string = ','.join(match)
             s.write(string + '\n')

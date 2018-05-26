@@ -7,7 +7,7 @@ Haemochromatosis,6,HFE,rs1800562,"AA, AG, GG",GG,,,AG,AA,
 ,,,rs1799945,"CC, CG, GG",,,"CC,CG",GG,,
 Haemophilia,X,F8,,,,,,,,
 ,X,F9,,,,,,,,
-(Factor XI deficiency is more common in Ashkenazi Jews),4,F11,i4000397,"AA, AG*, GG",GG,,,,AA,AG
+Haemophilia (Factor XI deficiency is more common in Ashkenazi Jews),4,F11,i4000397,"AA, AG*, GG",GG,,,,AA,AG
 ,,,i4000398,"GG, GT*, TT",GG,,,,TT,GT
 ,,,i4000399,"CC, CT*, TT",TT,,,,CC,GT
 Huntington's disease,4,HTT,rs17781557,"GG, GT*, TT",TT,,,,GG,GT

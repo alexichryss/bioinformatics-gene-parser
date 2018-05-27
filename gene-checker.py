@@ -59,26 +59,40 @@ def process(filename):
     # flatten the results array
     results = [y for x in results for y in x]
 
-    for c in results:
-        if 'Carrier' in c:
-            print(c)
-    for m in results:
-        if 'Most Likely' in m:
-            print(m)
-
-    results = sorted(results, key=lambda x: x[0])
+    # iterate through likelihoods and create a new sorted array with the results
+    print('Printing Results...')
+    header = ['Description', 'SNP', 'Chromosome', 'Genotype', 'Likelihood']
+    print(header)
+    likelihood = ['Carrier', 'Most Likely', 'More Likely', 'Normal', 'Less Likely', 'Not Likely']
+    new_results = [store(results, x) for x in likelihood]
+    new_results = [y for x in new_results for y in x]
 
     # save the results to an output file
     i = 0
-    path = 'output_' + str(i) + '.txt'
+    path = 'output_' + str(i) + '.csv'
     while os.path.isfile(path):
         i += 1
-        path = 'output_' + str(i) + '.txt'
+        path = 'output_' + str(i) + '.csv'
     with open(path, 'w+') as s:
-        for match in results:
+        header = ','.join(header)
+        s.write(header + '\n')
+        for match in new_results:
+            match[0] = '"' + match[0] + '"'
             string = ','.join(match)
             s.write(string + '\n')
     s.close()
+
+# searches results for a likelihood and returns an array with the sorted matches
+def store(results, likelihood):
+    temp = []
+    for c in results:
+        if likelihood in c:
+            if likelihood in ['Carrier', 'Most Likely']:
+                print(c)
+            temp.append(c)
+    temp = sorted(temp, key=lambda x: x[0])
+    return temp
+    
 
 # checks if gene exists in DISEASES
 def compute(gene):
@@ -89,23 +103,28 @@ def compute(gene):
                 match = []
                 match.append(disease.description)
                 match.append(seq['SNP'])
+                match.append(gene.chromosome)
+                match.append(gene.genotype)
+                allele = gene.genotype
+                if len(gene.genotype) == 1:
+                    allele += gene.genotype
 
-                if gene.genotype in seq['Not Likely']:
+                if allele in seq['Not Likely']:
                     match.append('Not Likely')
                     matches.append(match)
-                if gene.genotype in seq['Less Likely']:
+                if allele in seq['Less Likely']:
                     match.append('Less Likely')
                     matches.append(match)
-                if gene.genotype in seq['Normal']:
+                if allele in seq['Normal']:
                     match.append('Normal')
                     matches.append(match)
-                if gene.genotype in seq['More Likely']:
+                if allele in seq['More Likely']:
                     match.append('More Likely')
                     matches.append(match)
-                if gene.genotype in seq['Most Likely']:
+                if allele in seq['Most Likely']:
                     match.append('Most Likely')
                     matches.append(match)
-                if gene.genotype in seq['Carrier']:
+                if allele in seq['Carrier']:
                     match.append('Carrier')
                     matches.append(match)
     return matches

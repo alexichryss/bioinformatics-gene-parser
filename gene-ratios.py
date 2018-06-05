@@ -61,7 +61,7 @@ def process(filename):
 
     # iterate through likelihoods and create a new sorted array with the results
     print('Printing Results...')
-    header = ['Description', 'Likelihood(s): Ratio']
+    header = ['Description', 'SNPs', 'Likelihood(s): Ratio']
     print(header)
     #likelihood = ['Carrier', 'Most Likely', 'More Likely', 'Normal', 'Less Likely', 'Not Likely']
     new_results = [store(results, x.description) for x in DISEASES]
